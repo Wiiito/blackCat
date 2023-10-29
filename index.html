@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="scss/general.css" />
+    <title>Black Cat</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="eyeImage">
+          <img src="imgs/Eye.png" alt="Cat-Eye" />
+          <img src="imgs/ClosedEye.png" alt="Cat-Eye" />
+        </div>
+        <h1 class="animatedUnderline">Black Cat</h1>
+      </div>
+    </header>
+    <div class="slider">
+      <div class="flowField">
+        <canvas id="flowFieldCanvas"></canvas>
+      </div>
+      <div class="sliderCarousel">
+        <div class="contentContainer">
+          <div class="text">
+            <p>
+              Edgar Allan Poe was an American writer, poet, author, editor, and
+              literary critic who is best known for his poetry and short
+              stories, particularly his tales of mystery and the macabre. He is
+              widely regarded as a central figure of Romanticism and Gothic
+              fiction in the United States, and of American literature. Poe was
+              one of the country's earliest practitioners of the short story,
+              and is considered the inventor of the detective fiction genre, as
+              well as a significant contributor to the emerging genre of science
+              fiction. He is the first well-known American writer to earn a
+              living through writing alone, resulting in a financially difficult
+              life and career.
+            </p>
+            <div class="buttons">
+              <button class="">
+                <span class="seeMore">See more</span>
+              </button>
+              <button class=""><span class="next">Next</span></button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="imgs/poe.png" alt="poe" />
+          </div>
+        </div>
+        <div class="contentContainer">
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              doloribus officia facere laboriosam quisquam. Incidunt
+              voluptatibus beatae nulla fuga fugit id reprehenderit facere
+              molestiae, placeat vero suscipit a, velit corporis.
+            </p>
+            <div class="buttons">
+              <button class="">
+                <span class="seeMore">See more</span>
+              </button>
+              <button class=""><span class="next">Next</span></button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="imgs/poe.png" alt="poe" />
+          </div>
+        </div>
+      </div>
+      <div class="slidePoint">
+        <input type="radio" name="slides" id="slide-0" checked />
+        <label for="slide-0"><div></div></label>
+        <input type="radio" name="slides" id="slide-1" />
+        <label for="slide-1"><div></div></label>
+      </div>
+    </div>
+    <section class="blackCat">
+      <div class="shadow"></div>
+      <h2 class="fadeInWhenLoad">
+        <span class="animatedUnderline">BlackCat</span>
+      </h2>
+      <div class="sectionContent">
+        <div class="img">
+          <img
+            class="fadeInWhenLoad"
+            src="./imgs/black-cat.gif"
+            alt="Cute-Lil-Cat" />
+        </div>
+        <div class="text fadeInWhenLoad">
+          "The Black Cat" is a short story by American writer Edgar Allan Poe.
+          It was first published in the August 19, 1843, edition of The Saturday
+          Evening Post. In the story, an unnamed narrator has a strong affection
+          for pets until he perversely turns to abusing them. His favorite, a
+          pet black cat, bites him one night and the narrator punishes it by
+          cutting its eye out and then hanging it from a tree.
+          <span class="link fadeInWhenLoad">
+            <a href="#text">Click here to read the poem</a>
+          </span>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/flowField.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/fadeIn.js"></script>
+</html>

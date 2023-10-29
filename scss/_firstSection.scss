@@ -1,0 +1,106 @@
+@import 'mixins';
+
+.blackCat {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 3vh 12vw;
+
+  .shadow {
+    position: absolute;
+    left: -12vw;
+    top: -100%;
+    height: 100%;
+    width: calc(100% + 12vw + 5rem);
+    box-shadow: 0 0 8vh rgba($black, 0.8);
+  }
+
+  h2 {
+    color: $white;
+    font-family: 'Caveat', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    transition: ease 0.3s all;
+
+    &:hover {
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  .text {
+    text-align: justify;
+    color: $white;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation-delay: 0.8s;
+
+    span {
+      opacity: 0;
+      animation-delay: 0.9s;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 1.8rem;
+      padding-left: 4%;
+      flex-direction: column;
+    }
+
+    @include breakpoint-down(medium) {
+      padding-top: 4vh;
+    }
+  }
+
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vh;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+      font-size: 1.25rem;
+    }
+  }
+
+  .img {
+    display: none;
+
+    img {
+      opacity: 0;
+      animation-delay: 0.4s;
+    }
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      max-height: 40%;
+    }
+
+    @include breakpoint-up(large) {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      min-width: 45%;
+      align-items: center;
+      max-height: 100%;
+
+      img {
+        width: 65%;
+      }
+    }
+  }
+
+  .sectionContent {
+    margin-top: 4vh;
+    @include breakpoint-up(large) {
+      display: flex;
+      height: calc(100% - 6rem - 15vh);
+      align-items: center;
+    }
+  }
+}

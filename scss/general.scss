@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'header';
+@import 'slider';
+@import 'firstSection';
+@import 'miscellaneous';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-black;
+  font-family: 'Monteserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  // visibility: hidden;
+  width: 10px;
+  // overflow: overlay;
+}
+
+// /* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gray;
+  border-radius: 2rem;
+  transition: 0.3s ease-in-out all;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #373737;
+}
+
+.flex {
+  display: flex;
+}

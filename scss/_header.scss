@@ -1,0 +1,63 @@
+header {
+  width: 100%;
+  height: calc(10vh + 1rem);
+  background-color: $black;
+
+  .logo {
+    position: relative;
+    max-width: 10rem;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    .eyeImage {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      margin-left: 2rem;
+
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: calc(50% - 0.5rem);
+        left: 50%;
+        width: 100%;
+
+        &:first-child {
+          display: block;
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    h1 {
+      position: absolute;
+      bottom: 0.2rem;
+      color: $white;
+      font-family: 'Caveat', cursive;
+      margin-left: 3.5rem;
+      font-size: 1.6rem;
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+      right: 5%;
+    }
+
+    &:hover {
+      .eyeImage {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+      h1 {
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+}
