@@ -1,0 +1,122 @@
+.characters {
+  min-height: 100vh;
+  border-top: 1px solid $dark-gray;
+
+  h3 {
+    text-align: center;
+    color: $white;
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+    margin-top: 1rem;
+  }
+
+  .cardsContainer {
+    width: 100%;
+    padding: 1rem 5vw 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 2rem;
+
+    .cardHousing {
+      width: 100%;
+
+      @include breakpoint-up(medium) {
+        width: 45%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 30%;
+        height: 38vh;
+      }
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          .card {
+            opacity: 0;
+            animation-delay: #{$i * 0.1s};
+
+            .backgroundImg {
+              opacity: 0;
+              animation-delay: #{0.2s + $i * 0.1s};
+            }
+
+            .text {
+              opacity: 0;
+              animation-delay: #{0.4s + $i * 0.1s};
+            }
+          }
+        }
+      }
+    }
+
+    .card {
+      background-color: $dark-gray;
+      width: 100%;
+      height: 100%;
+      padding: 0 1rem 1rem;
+      overflow: hidden;
+      border-radius: 0.5rem;
+
+      .background {
+        background-color: $gray;
+        margin-top: 1rem;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        height: calc(100% - 1rem);
+      }
+
+      .backgroundImg {
+        position: relative;
+        width: 100%;
+        // overflow: hidden;
+        height: 10vh;
+        border-bottom: 0.2rem $white solid;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .profile {
+          position: absolute;
+          height: 10vh;
+          width: 10vh;
+          overflow: hidden;
+          border: 2px solid $white;
+          bottom: -3vh;
+          transform: translateX(-50%);
+          left: 50%;
+          border-radius: 50%;
+        }
+      }
+
+      .text {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        max-height: calc(100% - 10vh);
+
+        color: $white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 3vh 2vw;
+        // background-color: $gray;
+
+        span {
+          transform: translateY(-50%);
+          top: 50%;
+          position: inherit;
+          //   height: 100%;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          line-clamp: 6;
+        }
+      }
+    }
+  }
+}

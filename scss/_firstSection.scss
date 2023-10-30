@@ -19,10 +19,15 @@
   h2 {
     color: $white;
     font-family: 'Caveat', sans-serif;
-    font-size: 6rem;
+    font-size: 5.2rem;
     text-align: center;
     letter-spacing: 0.1rem;
     transition: ease 0.3s all;
+
+    @include breakpoint-up(medium) {
+      padding-top: 1rem;
+      font-size: 6rem;
+    }
 
     &:hover {
       letter-spacing: 0.2rem;
@@ -96,10 +101,10 @@
   }
 
   .sectionContent {
-    margin-top: 4vh;
+    margin-top: 3vh;
     @include breakpoint-up(large) {
       display: flex;
-      height: calc(100% - 6rem - 15vh);
+      height: calc(100% - 7rem - 15vh);
       align-items: center;
     }
   }
