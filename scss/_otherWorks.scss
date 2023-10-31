@@ -1,0 +1,165 @@
+.otherWorks {
+  height: 100vh;
+  width: 100%;
+  border-top: 1px solid $dark-gray;
+  padding: 2vh 5vw;
+  // gap: 2%;
+
+  .works {
+    display: block;
+    justify-content: space-between;
+    margin-top: 4vh;
+    height: calc(100% - 8vh - 5rem);
+
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+
+    .cards {
+      width: 100%;
+      background-color: $dark-gray;
+      border-radius: 0.5rem;
+      z-index: -0;
+      padding-top: 1vw;
+      margin-bottom: 4vh;
+
+      @include breakpoint-up(large) {
+        height: 100%;
+        width: 18%;
+        // display: block;
+      }
+
+      .imgContainer {
+        position: relative;
+        height: 40%;
+        margin: 1vw 1vw;
+        background-color: $gray;
+        display: block;
+        border-radius: 0.5rem 0.5rem 0 0;
+        border-bottom: 1px solid $white;
+        text-align: center;
+
+        img {
+          height: 7.5rem;
+
+          @include breakpoint-up(large) {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .text {
+        position: relative;
+        margin: 0 1vw 1vw;
+        font-family: 'Montserrat', sans-serif;
+
+        @include breakpoint-down(medium) {
+          padding-bottom: 3rem;
+        }
+
+        @include breakpoint-up(large) {
+          height: calc(60% - 2vw);
+        }
+
+        h5 {
+          margin-left: -0.25vw;
+          color: $white;
+          font-size: 1.2rem;
+          margin-bottom: 1vh;
+        }
+
+        p {
+          color: $light-gray;
+          text-align: justify;
+          padding: 0 0.25vw;
+          display: block;
+          overflow: hidden;
+          @include breakpoint-up(large) {
+            height: calc(100% - 5.2rem);
+          }
+        }
+
+        a {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          font-size: 1rem;
+          color: $light-gray;
+          text-decoration: none;
+
+          div {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1.5rem;
+            background-color: $gray;
+            border-radius: 0 0 0.5rem 0.5rem;
+
+            @include breakpoint-down(medium) {
+              bottom: 1vw;
+            }
+            // z-index: 2;
+
+            &::after {
+              content: '';
+              position: absolute;
+              z-index: -4;
+              width: 96%;
+              height: 50%;
+              top: 0;
+              left: 2%;
+              // background-color: red;
+              box-shadow: 0 -0.3rem 1rem;
+            }
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-family: 'Montserrat';
+      }
+
+      .seeMore {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $gray;
+        width: calc(100% - 2vw);
+        height: calc(100% - 1vw);
+        margin: 0 1vw 1vw;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        min-height: 10rem;
+
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin-top: -4vh;
+          height: 4.5rem;
+          width: 4.5rem;
+          background-color: $light-gray;
+          margin-bottom: 2vh;
+
+          svg {
+            font-size: 2.75rem;
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}

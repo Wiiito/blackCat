@@ -380,16 +380,17 @@ header .logo:hover h1 {
   right: 15%;
 }
 
-.characters {
-  min-height: 100vh;
-  border-top: 1px solid #1a1a1a;
-}
-.characters h3 {
+.sectionTitle {
   text-align: center;
   color: #f2f2f2;
   font-size: 4rem;
   font-family: "Caveat", cursive;
   margin-top: 1rem;
+}
+
+.characters {
+  min-height: 100vh;
+  border-top: 1px solid #1a1a1a;
 }
 .characters .cardsContainer {
   width: 100%;
@@ -518,19 +519,178 @@ header .logo:hover h1 {
   max-height: calc(100% - 10vh);
   color: #f2f2f2;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
   padding: 3vh 2vw;
 }
+.characters .cardsContainer .card .text h4 {
+  font-size: 1.4rem;
+}
 .characters .cardsContainer .card .text span {
   transform: translateY(-50%);
-  top: 50%;
+  top: 45%;
   position: inherit;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   line-clamp: 6;
+}
+
+.otherWorks {
+  height: 100vh;
+  width: 100%;
+  border-top: 1px solid #1a1a1a;
+  padding: 2vh 5vw;
+}
+.otherWorks .works {
+  display: block;
+  justify-content: space-between;
+  margin-top: 4vh;
+  height: calc(100% - 8vh - 5rem);
+}
+@media (min-width: 64em) {
+  .otherWorks .works {
+    display: flex;
+  }
+}
+.otherWorks .works .cards {
+  width: 100%;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  z-index: 0;
+  padding-top: 1vw;
+  margin-bottom: 4vh;
+}
+@media (min-width: 64em) {
+  .otherWorks .works .cards {
+    height: 100%;
+    width: 18%;
+  }
+}
+.otherWorks .works .cards .imgContainer {
+  position: relative;
+  height: 40%;
+  margin: 1vw 1vw;
+  background-color: #333333;
+  display: block;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: center;
+}
+.otherWorks .works .cards .imgContainer img {
+  height: 7.5rem;
+}
+@media (min-width: 64em) {
+  .otherWorks .works .cards .imgContainer img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.otherWorks .works .cards .text {
+  position: relative;
+  margin: 0 1vw 1vw;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 63.9375em) {
+  .otherWorks .works .cards .text {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 64em) {
+  .otherWorks .works .cards .text {
+    height: calc(60% - 2vw);
+  }
+}
+.otherWorks .works .cards .text h5 {
+  margin-left: -0.25vw;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  margin-bottom: 1vh;
+}
+.otherWorks .works .cards .text p {
+  color: #808080;
+  text-align: justify;
+  padding: 0 0.25vw;
+  display: block;
+  overflow: hidden;
+}
+@media (min-width: 64em) {
+  .otherWorks .works .cards .text p {
+    height: calc(100% - 5.2rem);
+  }
+}
+.otherWorks .works .cards .text a {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 1rem;
+  color: #808080;
+  text-decoration: none;
+}
+.otherWorks .works .cards .text a div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  background-color: #333333;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (max-width: 63.9375em) {
+  .otherWorks .works .cards .text a div {
+    bottom: 1vw;
+  }
+}
+.otherWorks .works .cards .text a div::after {
+  content: "";
+  position: absolute;
+  z-index: -4;
+  width: 96%;
+  height: 50%;
+  top: 0;
+  left: 2%;
+  box-shadow: 0 -0.3rem 1rem;
+}
+.otherWorks .works .cards a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Montserrat";
+}
+.otherWorks .works .cards .seeMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  width: calc(100% - 2vw);
+  height: calc(100% - 1vw);
+  margin: 0 1vw 1vw;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  min-height: 10rem;
+}
+.otherWorks .works .cards .seeMore p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: -4vh;
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: #808080;
+  margin-bottom: 2vh;
+}
+.otherWorks .works .cards .seeMore p svg {
+  font-size: 2.75rem;
+  fill: #f2f2f2;
 }
 
 * {

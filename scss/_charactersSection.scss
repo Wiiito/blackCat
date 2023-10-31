@@ -2,14 +2,6 @@
   min-height: 100vh;
   border-top: 1px solid $dark-gray;
 
-  h3 {
-    text-align: center;
-    color: $white;
-    font-size: 4rem;
-    font-family: 'Caveat', cursive;
-    margin-top: 1rem;
-  }
-
   .cardsContainer {
     width: 100%;
     padding: 1rem 5vw 3rem;
@@ -100,14 +92,17 @@
 
         color: $white;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: justify;
         padding: 3vh 2vw;
-        // background-color: $gray;
+
+        h4 {
+          font-size: 1.4rem;
+        }
 
         span {
           transform: translateY(-50%);
-          top: 50%;
+          top: 45%;
           position: inherit;
           //   height: 100%;
           overflow: hidden;
