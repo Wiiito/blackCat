@@ -91,6 +91,16 @@
           animation-delay: 0.6s;
         }
 
+        a {
+          color: $white;
+          text-decoration: none;
+
+          &:visited {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+
         span {
           display: flex;
           position: relative;

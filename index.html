@@ -43,7 +43,13 @@
             </p>
             <div class="buttons">
               <button class="">
-                <span class="seeMore">See more</span>
+                <span class="seeMore">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe"
+                    target="_blank">
+                    See more
+                  </a>
+                </span>
               </button>
               <button class=""><span class="next">Next</span></button>
             </div>
@@ -55,20 +61,67 @@
         <div class="contentContainer">
           <div class="text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              doloribus officia facere laboriosam quisquam. Incidunt
-              voluptatibus beatae nulla fuga fugit id reprehenderit facere
-              molestiae, placeat vero suscipit a, velit corporis.
+              The frightening tale of a murderer tormented by guilt over his
+              terrible deeds is a classic. The narrator's admission that much of
+              his bad behavior and deranged thinking is the result of demon
+              alcohol is possibly autobiographical, as Poe himself struggled
+              with alcoholism throughout his life.
             </p>
             <div class="buttons">
               <button class="">
-                <span class="seeMore">See more</span>
+                <a href="#blackCat">
+                  <span class="seeMore">See more</span>
+                </a>
               </button>
               <button class=""><span class="next">Next</span></button>
             </div>
           </div>
           <div class="img">
-            <img src="imgs/poe.png" alt="poe" />
+            <img src="imgs/cute-black-cat.png" alt="poe" />
+          </div>
+        </div>
+        <div class="contentContainer">
+          <div class="text">
+            <p>
+              The narrator meets a large and very beautiful black cat that he
+              names Pluto. He and the cat form a close bond, though the
+              narrator's wife questions whether the cat might be a witch in
+              disguise.
+            </p>
+            <div class="buttons">
+              <button class="">
+                <a href="#characters">
+                  <span class="seeMore">See more</span>
+                </a>
+              </button>
+              <button class=""><span class="next">Next</span></button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="imgs/characters.png" alt="poe" />
+          </div>
+        </div>
+        <div class="contentContainer">
+          <div class="text">
+            <p>
+              Edgar Allan Poe's poems are renowned for their dark and macabre
+              themes, often delving into the human psyche's deepest and most
+              unsettling aspects. His mastery of language and rhythm creates an
+              eerie and haunting atmosphere that lingers in the reader's mind.
+              Poems like "The Raven" showcase his skill in weaving melancholy
+              and mystery into his verses.
+            </p>
+            <div class="buttons">
+              <button class="">
+                <a href="#works">
+                  <span class="seeMore">See more</span>
+                </a>
+              </button>
+              <button class=""><span class="next">Next</span></button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="imgs/feather.png" alt="poe" />
           </div>
         </div>
       </div>
@@ -77,9 +130,13 @@
         <label for="slide-0"><div></div></label>
         <input type="radio" name="slides" id="slide-1" />
         <label for="slide-1"><div></div></label>
+        <input type="radio" name="slides" id="slide-2" />
+        <label for="slide-2"><div></div></label>
+        <input type="radio" name="slides" id="slide-3" />
+        <label for="slide-3"><div></div></label>
       </div>
     </div>
-    <section class="blackCat">
+    <section class="blackCat" id="blackCat">
       <div class="shadow"></div>
       <h2 class="fadeInWhenLoad">
         <span class="animatedUnderline">BlackCat</span>
@@ -99,12 +156,16 @@
           pet black cat, bites him one night and the narrator punishes it by
           cutting its eye out and then hanging it from a tree.
           <span class="link fadeInWhenLoad">
-            <a href="#text">Click here to read the poem</a>
+            <a
+              href="https://repositorio.ufsc.br/bitstream/handle/123456789/132710/The_Black_Cat_%28Edgar_Allan_Poe_1843%29.pdf?sequence=1&isAllowed=y"
+              target="_blank"
+              >Click here to read the poem</a
+            >
           </span>
         </div>
       </div>
     </section>
-    <section class="characters">
+    <section class="characters" id="characters">
       <h3 class="sectionTitle">
         <span class="animatedUnderline fadeInWhenLoad"> Characters </span>
       </h3>
@@ -219,7 +280,7 @@
         </div>
       </div>
     </section>
-    <section class="otherWorks">
+    <section class="otherWorks" id="works">
       <h3 class="sectionTitle">
         <span class="animatedUnderline fadeInWhenLoad"> Other Works </span>
       </h3>
@@ -237,7 +298,9 @@
               carnival time, is about a man taking fatal revenge on a friend
               who, he believes, has insulted him.
             </p>
-            <a href="#">
+            <a
+              href="https://poemuseum.org/the-cask-of-amontillado/"
+              target="_blank">
               <div>Click here to read</div>
             </a>
           </div>
@@ -255,7 +318,9 @@
               sanity while simultaneously describing a murder the narrator
               committed.
             </p>
-            <a href="#">
+            <a
+              href="https://poemuseum.org/the-tell-tale-heart/"
+              target="_blank">
               <div>Click here to read</div>
             </a>
           </div>
@@ -273,7 +338,7 @@
               tells of a distraught lover who is paid a mysterious visit by a
               talking raven.
             </p>
-            <a href="#">
+            <a href="https://poemuseum.org/the-raven/" target="_blank">
               <div>Click here to read</div>
             </a>
           </div>
@@ -290,13 +355,15 @@
               Prospero's attempts to avoid a dangerous plague, known as the Red
               Death, by hiding in his abbey.
             </p>
-            <a href="#">
+            <a
+              href="https://poemuseum.org/the-masque-of-the-red-death/"
+              target="_blank">
               <div>Click here to read</div>
             </a>
           </div>
         </div>
         <div class="cards">
-          <a href="#">
+          <a href="https://poemuseum.catalogaccess.com/library" target="_blank">
             <div class="seeMore">
               <p class="fadeInWhenLoad">
                 <svg
@@ -314,6 +381,11 @@
         </div>
       </div>
     </section>
+    <footer>
+      © EFF - Erick, Fernando, Flavio
+      <br />
+      School work made to present Edgar Allan Poe
+    </footer>
   </body>
   <script src="js/flowField.js"></script>
   <script src="js/slider.js"></script>

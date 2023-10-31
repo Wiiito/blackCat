@@ -5,6 +5,10 @@
   padding: 2vh 5vw;
   // gap: 2%;
 
+  @include breakpoint-down(medium) {
+    height: auto;
+  }
+
   .works {
     display: block;
     justify-content: space-between;
@@ -27,6 +31,10 @@
         height: 100%;
         width: 18%;
         // display: block;
+      }
+
+      @include breakpoint-down(medium) {
+        padding-bottom: 1vw;
       }
 
       .imgContainer {
@@ -56,7 +64,7 @@
 
       .text {
         position: relative;
-        margin: 0 1vw 1vw;
+        margin: 0 1vw 0vw;
         font-family: 'Montserrat', sans-serif;
 
         @include breakpoint-down(medium) {
@@ -103,9 +111,6 @@
             background-color: $gray;
             border-radius: 0 0 0.5rem 0.5rem;
 
-            @include breakpoint-down(medium) {
-              bottom: 1vw;
-            }
             // z-index: 2;
 
             &::after {
